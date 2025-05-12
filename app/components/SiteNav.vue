@@ -89,6 +89,9 @@ const navMenu = computed<DropdownOption[]>(() => [
     key: "about",
     label: t("nav.about"),
     icon: renderIcon("icon:info"),
+    props: {
+      onClick: () => window.open("https://www.isajuna.com"),
+    },
   },
   {
     key: "logout",
